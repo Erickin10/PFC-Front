@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<title>Login</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+		<link rel="stylesheet" href="css/style-cadastrong.css">
+	
+	</head>
+	
+	<body class="img js-fullheight" style="background-image: url(imagens/doguinhologin.jpg);">
+		<section class="ftco-section">
+			<div class="container-login">
+				<div class="row justify-content-center">
+					<div class="col-md-6 text-center mb-5">
+						<img src="imagens/logzin.png" alt="Logo" width="70" height="64" class="d-inline-block align-text-top">						
+						
+						<h2 class="heading-section" style="line-height: 1.5; font-weight: 400;	font-family: Lato, Arial, sans-serif;">
+							SOCÃES&GATOS
+						</h2>
+
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-6 col-lg-4">
+						<div class="login-wrap p-0">
+
+							<h3 class="mb-4 text-center" style="line-height: 1.5; font-weight: 400; font-family: 'Lato', Arial, sans-serif;">
+								Tem uma conta?
+							</h3>
+
+							<form action="#" class="signin-form">
+								<div class="form-group">
+									<input type="text" class="form-control-login" placeholder="Username" required>
+								</div>
+								<div class="form-group">
+									<input id="password-field" type="password" class="form-control-login" placeholder="Password" required>
+									<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+								</div>
+								
+								<div class="form-group d-md-flex ">
+									<div class="w-50">
+										<label class="checkbox-wrap checkbox-primary">Lembrar de mim
+											<input type="checkbox" checked>
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="w-50 text-md-right">
+										<a href="#" style="color: #fff">Esqueci minha senha </a>
+									</div>	
+								</div>									
+							</form>	      													    
+						</div>					
+						<div class="form-group" >
+							<a href="home.html">
+								<button type="submit" class="form-control-login btn btn-primary submit px-3" href="home.html">
+									Login
+								</button>
+							</a>
+
+							<br>
+							
+							<a href="cadastro.html" >Cadastre-se</a> 
+							ou 
+							<a href="cadastro-ong.html">Cadastre sua ONG</a>
+														
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Deixa a o site/fundo mais escuro ou opaco -->
+		<style>
+			body::after{
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				content: '';
+				background: #000;
+				opacity: .3;
+				z-index: -1; 
+			}
+		</style>
+
+	</body>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+
+</html>
+

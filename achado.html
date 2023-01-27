@@ -1,0 +1,196 @@
+<!-- multistep form -->css
+<head>
+   
+  <!--Fonte-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style-cadastrong.css">  
+
+  <!--Titulo-->
+  <title>Post achado</title>
+    
+</head>
+
+<body style="font-family: sans-serif; background-color: #fff;">
+
+  <header>    
+ 
+    <!-- Barra de navegação -->
+    <nav class="navbar fixed-top">
+      
+      <div class="container-fluid">
+        
+        <a class="navbar-brand" href="home.html">
+          <img src="imagens/logzin.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          SOCÃES&GATOS
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-end" tabhome="-1" id="offcanvasLightNavbar" aria-labelledby="offcanvasLightNavbarLabel">
+          
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLightNavbarLabel">SOCÃES&GATOS </h5>
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+    
+          <!-- Menu da bara de navegação -->
+          <div class="offcanvas-body">
+            
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+        
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Postar</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="achado.html">Achado</a></li>
+                  <li><a class="dropdown-item" href="perdido.html">Perdido</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Achados e perdidos</a>  
+              </li>
+
+            </ul>
+
+            <!-- Barra de pesquisa da barra de navegação -->
+            <form class="d-flex mt-3" role="search">
+
+              <input class="form-control me-2" type="Procure uma ONG" placeholder="Procure uma ONG" aria-label="Procure uma ONG">
+              <button class="btn btn-success" type="submit">Procurar</button>
+
+            </form>
+          </div>
+        </div>
+      </div>       
+    </nav>
+  </header>
+
+  <br><br><br>
+
+  <h3 class="main-title-p"> Achado </h3> 
+
+  <!-- Formulário de passos de progressão -->
+  <form class="msform-post" id="msform-post">
+  
+    <!-- Barra de progressão -->
+    <ul id="progressbar">
+      <li class="active">Idenficicação</li>
+      <li>Reconhecimento</li>
+      <li>Observações</li>
+    </ul>
+   
+    <!-- Fieldsets -->
+
+    <!-- Fieldset 1 -->
+    <fieldset align-items: center>
+
+      <h2 class="fs-title-post">Passo 1</h2>
+      <h3 class="fs-subtitle-post">Nos conte sobre o pet</h3>
+      
+      <select  id="select-input">
+        <option value="Gatoucachorro">É um gato ou um cachorro?</option>
+        <option value="Gato">Gato</option>
+        <option value="Cachorro">Cachorro</option>
+      </select>
+      <input type="text" name="name" placeholder="Qual é o nome?(Opcional)"/>
+      <input type="text" name="Raca" placeholder="Qual é a raça?" />
+      <input type="text" name="cor" placeholder="Qual é a cor?"  />
+      <input type="text" id="idade" placeholder="Quantos anos ele aparenta ter?"/>
+      <select  id="select-input" >
+        <option value="Genero">Qual é gênero dele?</option>
+        <option value="Macho">Macho</option>
+        <option value="Fêmea">Fêmea</option>
+      </select> 
+      <select  id="select-input">
+          <option value="Porte">Qual é o porte dele?</option>
+          <option value="Grande">Grande</option>
+          <option value="Médio">Médio</option>
+          <option value="Pequeno">Pequeno</option>
+      </select>
+      <img src="imagens/dogcatsob.png" alt="cachorro" id="imagem-dogcatsob1">
+
+      <input type="button" name="next" class="next action-button" value="Próximo" />
+
+    </fieldset>
+    
+    <!-- Fieldset 2 -->
+    <fieldset >
+   
+      <h2 class="fs-title-post">Passo 2</h2>
+      <h3 class="fs-subtitle-post">Nos mostre o bichinho</h3>
+
+      <div class="file-upload">
+
+        <img src="imagens/dogcatsob.png" alt="cachorro" id="imagem-dogcatsob2">
+
+        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">
+          Adicionar imagem
+        </button>
+        <div class="image-upload-wrap">
+          <input class="file-upload-input" type="file" multiple onchange="readURL(this);" accept="image/*" />
+          <div class="drag-text">
+            <h3>Solte a imagem aqui </h3>
+          </div>
+        </div>
+
+        <div class="file-upload-content">
+          <img class="file-upload-image" src="#" alt="your image" />
+          <div class="image-title-wrap">
+            <button type="button" onclick="removeUpload()" class="remove-image">
+              Remover
+              <span class="image-title">o upload da imagem</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    
+      <input type="button" name="previous" class="previous action-button" value="Anterior" />
+      <input type="button" name="next" class="next action-button" value="Próximo" />
+  
+    </fieldset>
+  
+    <!-- Fieldset 3 -->
+    <fieldset >
+      
+      <h2 class="fs-title-post">Passo 3</h2>
+      <h3 class="fs-subtitle-post">Nos conte outros detalhes</h3>
+      <img src="imagens/dogcatsob.png" alt="cachorro" id="imagem-dogcatsob3">
+      <input type="text" name="localizacao" placeholder="Onde ele foi achado?" />
+      <input type="text" name="" placeholder="Observações" />
+
+      <input type="button" name="previous" class="previous action-button" value="Anterior" />
+      <a href="postagem-certo.html" class="submit action-button" target="_top">Enviar dados</a>
+
+    </fieldset> 
+  </form>
+
+  <main>     
+  </main>
+
+</body>
+
+<!--Scripts-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!--Font Awesome-->
+<script src="https://kit.fontawesome.com/362d3e387c.js" crossorigin="anonymous"></script>  
+
+<!--Progress Bar-->
+<script src="js/progessbar.min.js"></script>
+
+<script src="js/postar.js"></script>

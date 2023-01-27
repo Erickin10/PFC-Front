@@ -1,0 +1,1077 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/*Fonte de customização*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* Gerais */
+    
+    body{
+        font-family:'Roboto', sans-serif;   
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .row{
+        margin: auto;
+    }
+
+    p, li {
+        color: #444;
+        font-size: 14px;
+    }
+
+
+/* Barra de navegacao */
+    header, .navbar {
+        background-color: #7fab7c;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        color: #FFF;
+    }
+
+    .navbar-brand:hover {
+        color: #FFF;
+    }
+
+    .navbar-links a{
+        color: #FFF;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 10rem .8rem;
+    }
+
+    .navbar-toggler{
+        color: rgb(177, 241, 197);
+    }
+    
+    
+
+
+
+/*Login*/
+
+    /*Muda a posição e dimensões do container*/
+    .container-login {
+        margin-right: auto;
+        margin-left: auto; 
+        max-width: 540px; 
+        text-align: center;
+        align-items: center;
+    }
+
+    /*Cor dos links de cadastro*/
+    a{
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+        color: #fbceb5; 
+    }
+    
+    /*Altera a distancia do container pra o topo da pagina */
+    .ftco-section {
+        padding: 7em 0; 
+    }
+
+    /*Escrita socaesegatos*/  
+    .heading-section {
+        font-size: 28px;
+        color: #fff; 
+    }
+
+    /*Deixa a imagem cobrindo todo o site*/
+    .img {
+        background-size: cover;
+    }
+
+    /*Escrita do "ja tem sua conta?"*/
+    .login-wrap {
+        color: rgba(255, 255, 255, 0.9); 
+    }
+
+    /*Escrita de baixo do cadastre-se*/
+    .login-wrap h3 {
+        font-weight: 300;
+        color: #fff; 
+    }
+
+    /*Alinha os textos do formulário no centro e os icones de esconder senha e checkbox*/
+    .form-group {
+        position: relative;
+        text-align: center; 
+        margin-bottom: 2rem;
+    }
+
+    /*Icone de esconder a senha*/
+    .field-icon {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: rgba(255, 255, 255, 0.9); 
+    }
+
+    /*Estiliza o formulario*/
+    .form-control-login {
+        background: transparent;
+        height: 50px;
+        color: white !important;
+        border: 1px solid transparent;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 40px;
+        width: 100%;
+    }
+
+    /*Estiliza os campos de input do formulario*/
+    .form-control-login::-webkit-input-placeholder, :hover,:focus {
+        /* Chrome/Opera/Safari */
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8) !important; 
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    /*Cursor fica em forma de ponteiro em cima da checkbox*/
+    .checkbox-wrap{
+        cursor: pointer;
+    }
+  
+    /* Esconde a checkbox padrao do browser */
+    .checkbox-wrap input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Cria uma checkbox personalizada */
+    .checkmark{
+        position: absolute;
+        top: 0;
+        left: 0; 
+    }
+    
+    /* Cria uma checkbox para que ela fique visivel quando nao e marcada*/
+    .checkmark:after {
+        content: "\f0c8";
+        font-family: "FontAwesome";
+        position: absolute;
+        color: rgba(255, 255, 255, 0.1);
+        font-size: 20px;
+        margin-top: -4px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; 
+    }
+    
+    /* Mostra o cehck quando a caixa e marcada */
+    .checkbox-wrap input:checked ~ .checkmark:after {
+        display: block;
+        content: "\f14a";
+        font-family: "FontAwesome";
+        color: rgba(0, 0, 0, 0.2); 
+    }
+    
+    /* Muda cor do lembrar de mim*/
+    .checkbox-primary {
+        color: #fbceb5; 
+    }
+        
+    .checkbox-primary input:checked ~ .checkmark:after {
+        color: #fbceb5;   
+    }
+
+    /*Deixa o cursor em formato de ponteiro em cima do botao de login*/
+    .btn {
+        cursor: pointer;
+    }
+    
+    /*Altera o fundo do botao de login*/
+    .btn.btn-primary {
+        background: #fbceb5 !important;
+        border: 1px solid #fbceb5 !important;
+        color: #000 !important; 
+    }
+
+
+
+
+
+/* Cadastro */
+
+    /* Containers do Cadastro */
+    .container-cad {
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    }    
+
+    /*Imagem do formulario do Cadastro*/
+    .form-image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        padding: 1rem;
+    }
+
+    .form-image img {
+        width: 40rem;
+        background-color: transparent;
+    }
+
+    /*Fomrulario do Cadastro */
+    .form-cad {
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        padding: 3rem;   
+    }
+
+    /*Estilo do fieldset */
+    #msform-cad {
+        width: 600px ;
+        margin: 50px auto;
+        text-align-last: center;
+        position: relative;
+    }
+
+    #msform-cad fieldset {
+        background:white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        top: -140px;
+        width: 80%;
+        margin: 0 10%;
+        position: relative;
+    }
+
+    /*Inputs de texto e numero*/
+    #msform-cad input, #msform-cad textarea {
+        padding: 3px;
+        border: 1px solid #7fab7c;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: montserrat;
+        color: #2C3E50;
+        font-size: 13px;
+    }
+
+    /*Botäo*/
+    #msform-cad .action-button {
+        width: 100px;
+        background: #7fab7c;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 10px;
+        margin: 10px 5px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    #msform-cad .action-button:hover, #msform-cad .action-button:focus {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+    }
+
+    /*Titulo do fieldset*/
+    .fs-title-cad {
+        font-size: 15px;
+	    text-transform: uppercase;
+	    color: #5c7e5a;
+	    margin-bottom: 10px;
+    }
+
+    /*Inputs do fieldset*/
+    .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+
+    /*Caixa de input*/
+    .input-box {
+        text-align: center;
+        display: contents ;
+        flex-direction: column;
+        margin-bottom: 1.1rem;
+    }
+
+    /*input da caixa de input*/
+    .input-box input {  
+        margin: 0.6rem 0;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 6px #0000001c;
+        font-size: 0.8rem;
+    }
+
+    .input-box input:hover {
+        background-color: #eeeeee75;
+    }
+
+    .input-box input:focus-visible {
+        outline: 1px solid #fbceb5;
+    }
+
+    .input-box input::placeholder {
+        color: #000000be; 
+    }
+
+
+
+
+
+/* Home */
+
+    /* Containers */
+    .container {
+        padding: 30px 0;
+    }
+
+    /*Barra de pesquisa*/
+    .search-bar {
+        margin-left: 11%;
+        text-align:center;
+        background-color: #e2dfee; 
+        width: 1000px;
+        height: 30px;
+        border: 2px solid #7fab7c        
+    }
+
+    .main-btn{
+        text-decoration: none;
+    }
+
+    /*Titulo Achados e Peridos*/
+    .main-title-h {
+        color: #444;
+        margin: 0 0 65px 0;
+        font-size: 40px; 
+        text-align: center;
+    }
+
+    /* Slider achados e perdidos */
+    .slick-slider{
+        position: relative;
+
+        display: block;
+        box-sizing: border-box;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+            touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .slick-list{
+        position: relative;
+
+        display:block;
+        overflow: hidden;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .slick-list:focus{
+        outline: none;
+    }
+
+    .slick-list.dragging{
+        cursor: pointer;
+        cursor: hand;
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .slick-track{
+        position: relative;
+        top: 0s;
+        left: 0;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slick-track:before,
+    .slick-track:after {
+        display: table;
+        content: '';
+    }
+    .slick-track:after{
+        clear: both;
+    }
+
+    .slick-loading .slick-track {
+        visibility: hidden;
+    }
+
+    .slick-slide {
+        display: none;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+    }
+
+    [dir='rtl'] .slick-slide {
+        float: right;
+    }
+
+    .slick-slide img {
+        display: block;
+    }
+
+    .slick-slide.slick-loading img {
+        display: none;
+    }
+
+    .slick-slide.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized .slick-slide {
+        display: block;
+    }
+
+    .slick-loading .slick-slide {
+        visibility: hidden;
+    }
+
+    .slick-vertical .slick-slide {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+
+    .slick-arrow.slick-hidden {
+        display: none;
+    }
+
+    /*Imagens do slider achados e perdidos*/
+    .slider{
+        padding-bottom: 40px;
+    }
+
+    .team{
+        text-align: center;
+        border: .5px solid #ddd;
+        background: #fff;
+        margin: 15px;
+        box-shadow: 10px 10px 20px #bbb;
+        border-radius: 50px;
+
+    }
+
+    .team a{
+        font-size: 25px;
+        padding: 4px 6px;
+        background: #fff;
+    }
+
+    .team a i:hover{
+        color: #5f945b;
+    }
+
+    .team img{
+        padding-bottom: 10px;
+        border-radius: 50px;
+        height: 300px;
+        width: 500px;
+        align-items: center;
+    }
+
+    .team h5{
+        color: #7fab7c;
+        padding: 5px 0px;
+    }
+
+    .team p{
+        color: #000;
+        font-size: 14px;
+
+    }
+
+    /*Botoes slider achados e peridos*/
+    .left_arrow {
+        position: absolute;
+        top: 32%;
+        left: -30px;
+        font-size: 25px;
+        height: 45px;
+        width: 55px;
+        background:#5f945b ;
+        color: rgb(253, 253, 253);
+        border-radius: 25%;
+        z-index: 99;
+        text-align: center;
+        line-height: 1.7;
+        border: 9px solid#5f945b ;
+    }
+
+    .left_arrow:hover{
+        background: #7fab7c ;
+        border-color: #7fab7c;
+    
+    }
+    
+    .right_arrow{
+        position: absolute;
+        top: 32%;
+        right: -30px;
+        font-size: 25px;
+        height: 45px;
+        width: 55px;
+        background:#5f945b ;
+        color: #fff;
+        border-radius: 25%;
+        z-index: 99;
+        text-align: center;
+        line-height: 1.7;
+        border: 9px solid#5f945b ;
+    }
+    
+    .right_arrow:hover{
+        background: #7fab7c ;
+        border-color: #7fab7c;
+    }
+    
+    .container-fluid{
+        padding: 0;
+    }
+    
+    #mainSlider .carousel-inner, #mainSlider .carousel-inner, #maiSlider .carousel-item{
+        height: 90vh;
+    }
+    
+    #mainSlider .carousel-caption{
+        top: 30%;
+    }
+    
+    #mainSlider .carousel-caption h2{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    
+    #mainSlider .carousel-caption p{
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 100px;
+        color: #FFF;
+    }
+    
+    .main-btn {
+        background-color: #7fab7c;
+        color: #FFF;
+        text-transform: uppercase;
+        width: 200px;
+        height: 60px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: 3px solid transparent;
+        transition: .5s;
+    }
+    
+    .main-btn:hover{
+        text-decoration: none;
+        color: #FFF;
+        background-color: transparent;
+        border-color: #7fab7c;
+    }
+    
+    .caroousel-indicators .active{
+        background-color: #7fab7c;
+    }
+
+    /*Sobre socaesegatos*/
+    #about-area{
+        background-color: #FFF;
+    }
+
+    #about-list {
+        list-style: none;
+        padding-left: 0;    
+    }
+
+    #about-list li{
+        line-height: 30px;
+    }
+
+    #about-list i{
+        color: #6bc564;
+        margin-right: 15px;
+    }
+
+    .sobrenos-title{
+        color: #444;
+        margin: 0 0 65px 0;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    /* Card*/
+    a, a:hover, a:focus {
+        color: inherit;
+    }
+
+    .profile-card-2 {
+        max-width: 300px;
+        background-color: #FFF;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+        background-position: center;
+        overflow: hidden;
+        position: relative;
+        margin: 10px auto;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .profile-card-2 img {
+        transition: all linear 0.25s;
+        height: 600px;
+    }
+
+    .profile-card-2 .profile-name {
+        position: absolute;
+        left: 30px;
+        bottom: 70px;
+        font-size: 30px;
+        color: #FFF;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+        transition: all linear 0.25s;
+    }
+
+    .profile-card-2 .profile-icons {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        color: #FFF;
+        transition: all linear 0.25s;
+    }
+
+    .profile-card-2 .profile-username {
+        position: absolute;
+        bottom: 50px;
+        left: 30px;
+        color: #FFF;
+        font-size: 13px;
+        transition: all linear 0.25s;
+    }
+
+    .profile-card-2 .profile-icons .fa {
+        margin: 5px;
+    }
+
+    .profile-card-2:hover img {
+        filter: grayscale(100%);
+    }
+
+    .profile-card-2:hover .profile-name {
+        bottom: 80px;
+    }
+
+    .profile-card-2:hover .profile-username {
+        bottom: 60px;
+    }
+
+    .profile-card-2:hover .profile-icons {
+        right: 40px;
+    }
+
+
+
+
+
+/* Post */
+
+    /*Achado*/
+    .main-title-p {
+        color: #5c7e5a;
+        margin: 0 0 65px 0;
+        font-size: 40px; 
+        text-align: center;
+    }
+  
+    /*Reset básico*/
+    * {margin: 0; padding: 0;}
+
+    /*Estilo dos formulário*/
+    .msform-post {
+	    width: 600px ;
+	    margin: 50px auto;
+        text-align-last: center;
+	    position: relative;
+    }
+
+    /*Imagem que sobrepõe o fromulario 1*/
+    #imagem-dogcatsob1 {
+        position:  absolute;
+        pointer-events: none;
+        top: 200px;
+        right: -265px;
+        width: 1070px ;
+    }
+  
+    /*Imagem que sobrepõe o fromulario 2*/
+    #imagem-dogcatsob2 {
+        position:  absolute; 
+        pointer-events: none;
+        top: -280px; 
+        right: -295px;
+        width: 1070px ;
+    }
+  
+    /*Imagem que sobrepõe o fromulario 3*/
+    #imagem-dogcatsob3 {
+        position:  absolute; 
+        pointer-events: none;
+        top: -150px; 
+        right: -265px;
+        width: 1070px ;
+    }
+    
+    #msform-post fieldset {
+        background:white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 10%;
+        position: relative;
+    }
+
+    /*Exibe um formulário por vez*/
+    #msform-post fieldset:not(:first-of-type) {
+	    display: none;
+    }
+
+    /*Inputs de texto e numero*/
+    #msform-post input, #msform-post textarea {
+        padding: 15px;
+        border: 1px solid #7fab7c;
+        border-radius: 3px;
+        margin-bottom: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: montserrat;
+        color: #2C3E50;
+        font-size: 13px;
+    }
+
+    /*Inputs de select*/
+    #select-input {	
+        padding: 15px;
+        border: 1px solid #7fab7c;
+        border-radius: 3px;
+        margin-bottom: 50px;
+        margin-top: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: montserrat;
+        color: #2C3E50;
+        font-size: 13px;
+    }
+
+    /*Botões*/
+    #msform-post .action-button {
+        width: 100px;
+        background: #7fab7c;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 10px;
+        margin: 10px 5px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    #msform-post .action-button:hover, 
+    #msform-post .action-button:focus {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+    }
+
+    /*Cabeçarios dos fieldsets*/
+    .fs-title-post {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #5c7e5a;
+        margin-bottom: 10px;
+    }
+    
+    .fs-subtitle-post {
+        font-weight: normal;
+        font-size: 13px;
+        color: #5c7e5a;
+        margin-bottom: 20px;
+    }
+
+    /*Barra de progresso*/
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        counter-reset: step;
+    }
+
+    #progressbar li {
+        list-style-type: none;
+        color: #7fab7c;
+        text-transform: uppercase;
+        font-size: 9px;
+        width: 33.33%;
+        float: left;
+        position: relative;
+    }
+
+    #progressbar li:before {
+        content: counter(step);
+        counter-increment: step;
+        width: 20px;
+        line-height: 20px;
+        display: block;
+        font-size: 10px;
+        color: #333;
+        background: white;
+        border-radius: 3px;
+        margin: 0 auto 5px auto;
+    }
+
+    /*Conectores da barra de progressão*/
+    #progressbar li:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: white;
+        position: absolute;
+        left: -50%;
+        top: 9px;
+        z-index: -1; /*Coloca a barra atras dos números*/
+    }
+
+    #progressbar li:first-child:after {
+        /*Esconde o conector do 1 conector*/
+        content: none; 
+    }
+
+    #progressbar li.active:before,  #progressbar li.active:after{
+        background: #7fab7c;
+        color: white;
+    }
+
+    /*Parte do upload da foto*/
+    .file-upload {
+        background-color: #ffffff;
+        width: auto ;
+          margin: 50px auto;
+      
+        position: relative;
+    }
+      
+    .file-upload-btn {
+        width: auto;
+        margin: 0;
+        color: #fff;
+        background: #7fab7c;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        border-bottom: 4px solid #7fab7c;
+        transition: all .2s ease;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+      
+    .file-upload-btn:hover {
+        background: #628660;
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+      
+    .file-upload-btn:active {
+        border: 0;
+        transition: all .2s ease;
+    }
+      
+    .file-upload-content {
+        display: none;
+        text-align: center;
+    }
+      
+    .file-upload-input {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+      
+    .image-upload-wrap {
+        margin-top: 20px;
+        border: 4px dashed #7fab7c;
+        position: relative;
+    }
+      
+    .image-dropping,
+    .image-upload-wrap:hover {
+        background-color: #7fab7c;
+        border: 4px dashed #ffffff;
+    }
+      
+    .image-title-wrap {
+        padding: 0 15px 15px 15px;
+        color: #222;
+    }
+      
+    .drag-text {
+        text-align: center;
+    }
+      
+    .drag-text h3 {
+        font-weight: 100;
+        text-transform: uppercase;
+        color: #317a55;
+        padding: 60px 0;
+    }
+      
+    .file-upload-image {
+        max-height: 200px;
+        max-width: 200px;
+        margin: auto;
+        padding: 20px;
+    }
+      
+    .remove-image {
+        width: auto;
+        margin: 0;
+        color: #fff;
+        background: #cd4535;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        border-bottom: 4px solid #b02818;
+        transition: all .2s ease;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+      
+    .remove-image:hover {
+        background: #c13b2a;
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+      
+    .remove-image:active {
+        border: 0;
+        transition: all .2s ease;
+    }
+
+
+
+
+
+/* Postagem/Cadastro Certo */
+
+    /*Estilo dos dormulário*/
+    #msform-post-certo {
+        width: 900px ;
+        height: -400px;
+        margin-top: 240px;
+        margin-bottom: 100px;
+        right: -500px;
+        text-align-last: center;
+        position: relative;
+    }
+
+    /*Imagem que sobrepõe o formulário*/
+    #imagem-catdog {
+        position:  absolute;
+        pointer-events: none;
+        top: -448px;
+        right: 35px;
+        width: 700px ;
+    }
+
+    #msform-post-certo fieldset {
+        background:white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 10%;
+        position: relative;
+    }
+
+    /*Botões*/
+    #msform-post-certo .action-button {
+        width: 200px;
+        background: #7fab7c;
+        font-weight: bold;
+        color: white;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 15px;
+        margin: 10px 5px;
+    text-decoration: none;
+    font-size: 15px;
+    }
+
+    .main-title-post-certo {
+        color: #5c7e5a;
+        margin: 0 0 65px 0;
+        font-size: 40px; 
+        text-align: center;
+    }
+
+    
