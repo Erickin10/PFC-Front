@@ -132,7 +132,7 @@
     }
 
     /*Estiliza os campos de input do formulario*/
-    .form-control-login::-webkit-input-placeholder, :hover,:focus {
+    .form-control-login::-webkit-input-placeholder, .form-control-login:hover, .form-control-login:focus {
         /* Chrome/Opera/Safari */
         text-align: center;
         color: rgba(255, 255, 255, 0.8) !important; 
@@ -199,7 +199,7 @@
     }
     
     /*Altera o fundo do botao de login*/
-    .btn.btn-primary {
+    .form-control-login.btn.btn-primary.submit.px-3 {
         background: #fbceb5 !important;
         border: 1px solid #fbceb5 !important;
         color: #000 !important; 
